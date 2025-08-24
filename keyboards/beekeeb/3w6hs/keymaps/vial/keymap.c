@@ -63,7 +63,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         A(KC_Q),             S(KC_EQUAL),         S(KC_3),             S(KC_4),             S(KC_7),                                      KC_EQUAL,  S(KC_0),          S(KC_9),         A(KC_O),   A(KC_P),
         KC_1,                KC_2,                KC_3,                KC_4,                KC_5,                                         KC_6,      KC_7,             KC_8,            KC_9,      KC_0,
         S(KC_MINUS),         KC_MINUS,            S(KC_COMM),          S(KC_DOT),           S(KC_8),                                      S(KC_5),   S(KC_6),          A(KC_COMM),      A(KC_DOT), KC_SLASH,
-                                                  XXXXXXX,             XXXXXXX,             XXXXXXX,                                      XXXXXXX,   XXXXXXX,          XXXXXXX
+                                                  XXXXXXX,             XXXXXXX,             XXXXXXX,                                      KC_MEH,    KC_HYPR,          XXXXXXX
     ),
     [_SYM] = LAYOUT_split_3x5_3(
         A(KC_Q),             S(KC_EQUAL),         S(KC_3),             S(KC_4),             S(KC_7),                                      KC_EQUAL,  S(KC_0),          S(KC_9),         A(KC_O),   A(KC_P),
@@ -75,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_MEDIA_PREV_TRACK, KC_MEDIA_PLAY_PAUSE, KC_MEDIA_NEXT_TRACK, KC_AUDIO_VOL_DOWN,   KC_AUDIO_VOL_UP,                              KC_ESCAPE, KC_BACKSPACE,     KC_PAGE_UP,      KC_DELETE, KC_BRIGHTNESS_UP,
         KC_F1,               KC_F2,               KC_F3,               KC_F4,               KC_F5,                                        KC_LEFT,   KC_DOWN,          KC_UP,           KC_RGHT,   KC_ENTER,
         KC_F6,               KC_F7,               KC_F8,               KC_F9,               KC_F10,                                       KC_HOME,   KC_TAB,           KC_PAGE_DOWN,    KC_END,    KC_BRIGHTNESS_DOWN,
-                                                  QK_BOOT,             KC_F11,              KC_F12,                                       XXXXXXX,   XXXXXXX,          XXXXXXX         
+                                                  QK_BOOT,             KC_F11,              KC_F12,                                       KC_CAPS,   XXXXXXX,          XXXXXXX
     ),
     
 };
