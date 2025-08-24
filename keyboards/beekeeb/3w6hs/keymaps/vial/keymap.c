@@ -15,6 +15,32 @@
  */
 
 #include QMK_KEYBOARD_H
+#include "sm_td.h"
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    if (!process_smtd(keycode, record)) {
+        return false;
+    }
+
+    // your code here
+
+    return true;
+}
+
+smtd_resolution on_smtd_action(uint16_t keycode, smtd_action action, uint8_t tap_count) {
+    switch (keycode) {
+        SMTD_MT(KC_A, KC_LEFT_CTRL)
+        SMTD_MT(KC_S, KC_LEFT_ALT)
+        SMTD_MT(KC_D, KC_LSFT)
+        SMTD_MT(KC_F, KC_LEFT_GUI)
+        SMTD_MT(KC_J, KC_LEFT_GUI)
+        SMTD_MT(KC_K, KC_LSFT)
+        SMTD_MT(KC_L, KC_LEFT_ALT)
+        SMTD_MT(KC_SEMICOLON, KC_LEFT_CTRL)
+    }
+
+    return SMTD_RESOLUTION_UNHANDLED;
+}
 
 enum layers
 {
