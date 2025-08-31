@@ -60,16 +60,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                   XXXXXXX,             KC_SPC,              MO(_NUM),                                     MO(_SYM),  MO(_NAV),         XXXXXXX         
     ),
     [_NUM] = LAYOUT_split_3x5_3(
-        A(KC_Q),             S(KC_EQUAL),         S(KC_3),             S(KC_4),             S(KC_7),                                      KC_EQUAL,  S(KC_0),          S(KC_9),         A(KC_O),   A(KC_P),
+        S(KC_GRAVE),         S(KC_EQUAL),         S(KC_3),             S(KC_4),             S(KC_7),                                      KC_EQUAL,  S(KC_0),          S(KC_9),         KC_QUOTE,  S(KC_SEMICOLON),
         KC_1,                KC_2,                KC_3,                KC_4,                KC_5,                                         KC_6,      KC_7,             KC_8,            KC_9,      KC_0,
-        S(KC_MINUS),         KC_MINUS,            S(KC_COMM),          S(KC_DOT),           S(KC_8),                                      S(KC_5),   S(KC_6),          A(KC_COMM),      A(KC_DOT), KC_SLASH,
+        S(KC_MINUS),         KC_MINUS,            S(KC_COMM),          S(KC_DOT),           S(KC_8),                                      S(KC_5),   S(KC_6),          KC_COMM,         KC_DOT,    KC_SLASH,
                                                   XXXXXXX,             XXXXXXX,             XXXXXXX,                                      KC_MEH,    KC_HYPR,          XXXXXXX
     ),
     [_SYM] = LAYOUT_split_3x5_3(
-        A(KC_Q),             S(KC_EQUAL),         S(KC_3),             S(KC_4),             S(KC_7),                                      KC_EQUAL,  S(KC_0),          S(KC_9),         A(KC_O),   A(KC_P),
-        A(KC_A),             S(KC_SLASH),         S(KC_LEFT_BRACKET),  S(KC_RIGHT_BRACKET), S(KC_1),                                      A(KC_H),   KC_RIGHT_BRACKET, KC_LEFT_BRACKET, A(KC_L),   A(KC_SEMICOLON), 
-        S(KC_MINUS),         KC_MINUS,            S(KC_COMM),          S(KC_DOT),           S(KC_8),                                      S(KC_5),   S(KC_6),          A(KC_COMM),      A(KC_DOT), KC_SLASH,
-                                                  XXXXXXX,             KC_BACKSLASH,        S(KC_2),                                      XXXXXXX,   XXXXXXX,          XXXXXXX         
+        S(KC_GRAVE),         S(KC_EQUAL),         S(KC_3),             S(KC_4),             S(KC_7),                                      KC_EQUAL,        S(KC_0),          S(KC_9),         KC_QUOTE,    S(KC_SEMICOLON),
+        KC_GRAVE,            S(KC_SLASH),         S(KC_LEFT_BRACKET),  S(KC_RIGHT_BRACKET), S(KC_1),                                      S(KC_BACKSLASH), KC_RIGHT_BRACKET, KC_LEFT_BRACKET, S(KC_QUOTE), KC_SEMICOLON, 
+        S(KC_MINUS),         KC_MINUS,            S(KC_COMM),          S(KC_DOT),           S(KC_8),                                      S(KC_5),         S(KC_6),          KC_COMM,         KC_DOT,      KC_SLASH,
+                                                  XXXXXXX,             KC_BACKSLASH,        S(KC_2),                                      XXXXXXX,         XXXXXXX,          XXXXXXX         
     ),
     [_NAV] = LAYOUT_split_3x5_3(
         KC_MEDIA_PREV_TRACK, KC_MEDIA_PLAY_PAUSE, KC_MEDIA_NEXT_TRACK, KC_AUDIO_VOL_DOWN,   KC_AUDIO_VOL_UP,                              KC_ESCAPE, KC_BACKSPACE,     KC_PAGE_UP,      KC_DELETE, KC_BRIGHTNESS_UP,
